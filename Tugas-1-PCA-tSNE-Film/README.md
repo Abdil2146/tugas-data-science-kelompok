@@ -36,10 +36,5 @@ Sumber: Kaggle
 8. Menganalisis hasil PCA dan t-SNE.
 9. Menyusun kesimpulan berdasarkan hasil visualisasi.
 
-## File dalam Folder Ini
-- `Analisis_PCA_tSNE_Film_Populer.ipynb` → notebook utama analisis
-- `top_1000_popular_movies_tmdb.csv` → dataset film populer yang digunakan
-- `README.md` → penjelasan singkat tugas
-
 ## Ringkasan Hasil
 Hasil PCA menunjukkan gambaran umum struktur data film, namun pemisahan antar genre belum terlihat sepenuhnya jelas. Sementara itu, t-SNE menghasilkan visualisasi yang lebih detail dalam menampilkan kedekatan lokal antarfilm. Dari hasil tersebut dapat disimpulkan bahwa t-SNE lebih membantu dalam melihat pola persebaran lokal data, sedangkan PCA lebih baik untuk menggambarkan struktur data secara umum.
