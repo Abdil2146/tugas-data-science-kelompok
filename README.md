@@ -11,10 +11,4 @@ Repository ini digunakan sebagai tempat dokumentasi tugas kelompok pada mata kul
 ## Mata Kuliah
 Data Science
 
-## Daftar Tugas
-### 1. Tugas-1-PCA-tSNE-Film
-Analisis dan visualisasi dataset film populer menggunakan metode **Principal Component Analysis (PCA)** dan **t-Distributed Stochastic Neighbor Embedding (t-SNE)** untuk melihat pola persebaran data berdasarkan fitur numerik film.
 
----
-
-Repository ini akan terus diperbarui untuk menyimpan tugas-tugas berikutnya sesuai topik pembelajaran pada mata kuliah Data Science.
