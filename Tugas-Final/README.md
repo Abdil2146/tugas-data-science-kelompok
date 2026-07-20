@@ -146,8 +146,12 @@ Melalui project ini saya menjadi lebih memahami tahapan dalam membangun model ma
 
 ## Author
 
-**Aggota**
+**Aggota**Muhamad Aldio Khairullah Santoso (2452325)
+Hiraldy Ibrahim (24523176)
+Irham Malik Taufik (24523030)
+Muhammad Abdillah Mu’tashim (24523239)
+
 
 **Mata Kuliah:** Fundamental Sains Data
 
-**Universitas:** ...
+
