@@ -2,7 +2,7 @@
 
 ## Final Project Machine Learning
 
-### Anggota Kelompok
+### 👥 Anggota Kelompok
 
 - Muhammad Abdillah Mu’tashim (24523239)
 - Muhamad Aldio Khairullah Santoso (24523252)
@@ -11,7 +11,7 @@
 
 ---
 
-# Deskripsi Proyek
+# 📖 Deskripsi Proyek
 
 Proyek ini bertujuan untuk mengimplementasikan dua pendekatan Machine Learning menggunakan satu dataset yang sama, yaitu **Heart Disease Prediction Dataset**.
 
@@ -23,7 +23,7 @@ Selain itu, model prediksi juga diimplementasikan ke dalam aplikasi sederhana me
 
 ---
 
-# Dataset
+# 📂 Dataset
 
 **Nama Dataset**
 
@@ -52,7 +52,7 @@ Dataset ini memiliki beberapa atribut kesehatan, antara lain:
 
 ---
 
-# Tahapan Pengerjaan
+# 🔄 Tahapan Pengerjaan
 
 Proyek ini dikerjakan melalui beberapa tahapan sebagai berikut:
 
@@ -70,15 +70,15 @@ Proyek ini dikerjakan melalui beberapa tahapan sebagai berikut:
 
 ---
 
-# Algoritma yang Digunakan
+# 🤖 Algoritma yang Digunakan
 
 ## Supervised Learning
 
-Algoritma:
+**Algoritma**
 
 - Random Forest Classifier
 
-Evaluasi Model:
+**Evaluasi Model**
 
 - Accuracy Score
 - Classification Report
@@ -89,11 +89,11 @@ Evaluasi Model:
 
 ## Unsupervised Learning
 
-Algoritma:
+**Algoritma**
 
 - K-Means Clustering
 
-Evaluasi Clustering:
+**Evaluasi Clustering**
 
 - Elbow Method
 - Silhouette Score
@@ -102,7 +102,7 @@ Evaluasi Clustering:
 
 ---
 
-# Library yang Digunakan
+# 🛠️ Library yang Digunakan
 
 - Python
 - Google Colab
@@ -116,12 +116,21 @@ Evaluasi Clustering:
 
 ---
 
-# Struktur Proyek
+# 📁 Struktur Proyek
 
-```
-Heart-Disease-Prediction/
+```text
+Implementasi Supervised Learning dan Unsupervised Learning/
 │
-├── Final_Project.ipynb
+├── images/
+│   ├── confusion-matrix.png
+│   ├── feature-importance.png
+│   ├── elbow-method.png
+│   ├── kmeans-clustering.png
+│   ├── gradio-before.png
+│   ├── gradio-input.png
+│   └── gradio-result.png
+│
+├── FSD_Kelompok_Heart_Disease_Prediction.ipynb
 ├── heart.csv
 ├── heart_disease_model.pkl
 ├── scaler.pkl
@@ -131,35 +140,41 @@ Heart-Disease-Prediction/
 
 ---
 
-# Cara Menjalankan Proyek
+# ▶️ Cara Menjalankan Proyek
 
 1. Clone repository ini.
 
 ```bash
-git clone https://github.com/username/Heart-Disease-Prediction.git
+git clone https://github.com/Abdil2146/tugas-data-science-kelompok.git
 ```
 
-2. Install seluruh library yang dibutuhkan.
+2. Masuk ke folder project.
+
+```bash
+cd tugas-data-science-kelompok
+```
+
+3. Install seluruh library yang dibutuhkan.
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Buka file notebook menggunakan Google Colab atau Jupyter Notebook.
+4. Buka notebook menggunakan Google Colab atau Jupyter Notebook.
 
-4. Upload dataset **heart.csv**.
+5. Upload dataset **heart.csv**.
 
-5. Jalankan seluruh cell secara berurutan.
+6. Jalankan seluruh cell secara berurutan.
 
-6. Jalankan aplikasi Gradio untuk mencoba prediksi penyakit jantung.
+7. Jalankan aplikasi Gradio untuk mencoba prediksi penyakit jantung.
 
 ---
 
-# Implementasi Gradio
+# 🖥️ Implementasi Gradio
 
 Aplikasi Gradio digunakan sebagai antarmuka sederhana agar pengguna dapat melakukan prediksi penyakit jantung tanpa harus menjalankan kode secara langsung.
 
-Input yang digunakan:
+### Input
 
 - Age
 - Sex
@@ -175,36 +190,109 @@ Input yang digunakan:
 - CA
 - Thal
 
-Output:
+### Output
 
 - Hasil Prediksi Penyakit Jantung
 
 ---
 
-# Hasil Proyek
+# 📸 Dokumentasi Hasil
 
-Berdasarkan implementasi yang telah dilakukan, diperoleh beberapa hasil sebagai berikut:
+## 1. Confusion Matrix
 
-- Model Random Forest berhasil digunakan untuk memprediksi penyakit jantung berdasarkan data kesehatan pasien.
-- Algoritma K-Means berhasil mengelompokkan pasien berdasarkan kemiripan karakteristik kesehatan.
-- Evaluasi model menunjukkan bahwa Random Forest memiliki performa klasifikasi yang baik.
-- Evaluasi clustering menunjukkan bahwa data berhasil dikelompokkan menjadi beberapa cluster yang memiliki karakteristik berbeda.
-- Model berhasil diimplementasikan ke dalam aplikasi Gradio sehingga dapat digunakan secara interaktif.
+Confusion Matrix digunakan untuk mengevaluasi performa model **Random Forest Classifier** dalam mengklasifikasikan pasien yang berpotensi mengalami penyakit jantung dan yang tidak. Visualisasi ini menunjukkan jumlah prediksi yang benar maupun salah sehingga memudahkan analisis performa model.
+
+![Confusion Matrix](images/confusion-matrix.png)
 
 ---
 
-# Pengembangan Selanjutnya
+## 2. Feature Importance
+
+Visualisasi **Feature Importance** menunjukkan tingkat kontribusi masing-masing fitur terhadap hasil prediksi penyakit jantung. Semakin tinggi nilai importance suatu fitur, semakin besar pengaruhnya terhadap keputusan model.
+
+![Feature Importance](images/feature-importance.png)
+
+---
+
+## 3. Elbow Method
+
+Elbow Method digunakan untuk menentukan jumlah cluster (K) yang paling optimal pada algoritma **K-Means Clustering**. Titik siku (elbow) pada grafik menjadi acuan dalam menentukan jumlah cluster terbaik.
+
+![Elbow Method](images/elbow-method.png)
+
+---
+
+## 4. Visualisasi Hasil Clustering
+
+Visualisasi berikut menunjukkan hasil pengelompokan pasien menggunakan algoritma **K-Means Clustering**. Karena dataset memiliki banyak fitur, digunakan **Principal Component Analysis (PCA)** untuk mereduksi dimensi sehingga hasil clustering dapat divisualisasikan dalam dua dimensi.
+
+Setiap titik merepresentasikan satu pasien, sedangkan warna menunjukkan cluster tempat pasien tersebut berada.
+
+![K-Means Clustering](images/kmeans-clustering.png)
+
+---
+
+## 5. Tampilan Awal Aplikasi Gradio
+
+Berikut merupakan tampilan awal aplikasi sebelum pengguna memasukkan data pasien.
+
+![Gradio Before](images/gradio-before.png)
+
+---
+
+## 6. Pengisian Data Pasien
+
+Pengguna mengisi informasi kesehatan pasien pada setiap kolom yang tersedia sebelum proses prediksi dilakukan.
+
+![Gradio Input](images/gradio-input.png)
+
+---
+
+## 7. Hasil Prediksi
+
+Setelah seluruh data pasien dimasukkan, model Random Forest akan memberikan hasil prediksi apakah pasien berpotensi mengalami penyakit jantung atau tidak.
+
+![Gradio Result](images/gradio-result.png)
+
+---
+
+# 📈 Hasil Proyek
+
+Berdasarkan implementasi yang telah dilakukan, diperoleh beberapa hasil sebagai berikut.
+
+- Dataset berhasil dianalisis melalui proses Exploratory Data Analysis (EDA).
+- Data berhasil diproses melalui tahap preprocessing sehingga siap digunakan dalam proses pemodelan.
+- Model Random Forest berhasil digunakan untuk memprediksi penyakit jantung dengan performa yang baik berdasarkan hasil evaluasi.
+- Algoritma K-Means berhasil mengelompokkan pasien ke dalam beberapa cluster berdasarkan kemiripan karakteristik kesehatannya.
+- Visualisasi PCA mempermudah interpretasi hasil clustering.
+- Model berhasil diimplementasikan ke dalam aplikasi Gradio sehingga pengguna dapat melakukan prediksi secara interaktif.
+
+---
+
+# 💡 Insight dan Kesimpulan
+
+Penggunaan satu dataset untuk dua pendekatan Machine Learning menunjukkan bahwa data yang sama dapat dimanfaatkan untuk tujuan yang berbeda.
+
+Pendekatan **Supervised Learning** berhasil digunakan untuk memprediksi kemungkinan penyakit jantung berdasarkan data kesehatan pasien, sedangkan **Unsupervised Learning** mampu menemukan pola dan mengelompokkan pasien berdasarkan kemiripan karakteristik kesehatannya.
+
+Hasil evaluasi menunjukkan bahwa model Random Forest memiliki performa klasifikasi yang baik, sementara K-Means berhasil membentuk cluster yang memberikan gambaran mengenai karakteristik kelompok pasien.
+
+Implementasi menggunakan Gradio membuktikan bahwa model yang telah dibangun dapat diterapkan menjadi aplikasi sederhana sehingga lebih mudah digunakan oleh pengguna tanpa harus menjalankan kode secara langsung.
+
+---
+
+# 🚀 Pengembangan Selanjutnya
 
 Beberapa pengembangan yang dapat dilakukan pada penelitian ini antara lain:
 
-- Menggunakan dataset dengan jumlah data yang lebih banyak.
-- Membandingkan performa beberapa algoritma klasifikasi seperti Logistic Regression, SVM, dan XGBoost.
-- Membandingkan algoritma clustering seperti DBSCAN atau Hierarchical Clustering.
-- Mengembangkan aplikasi menjadi sistem berbasis web dengan fitur yang lebih lengkap.
-- Menambahkan visualisasi dan interpretasi model menggunakan SHAP atau LIME.
+- Menggunakan dataset dengan jumlah data yang lebih besar.
+- Membandingkan performa beberapa algoritma klasifikasi seperti Logistic Regression, Support Vector Machine (SVM), Decision Tree, XGBoost, atau Neural Network.
+- Membandingkan algoritma clustering lain seperti DBSCAN atau Hierarchical Clustering.
+- Mengembangkan aplikasi menjadi sistem berbasis web dengan tampilan yang lebih interaktif.
+- Menambahkan interpretasi model menggunakan SHAP atau LIME agar hasil prediksi lebih mudah dipahami.
 
 ---
 
-# Lisensi
+# 📄 Lisensi
 
-Proyek ini dibuat untuk memenuhi tugas **Final Project Mata Kuliah Machine Learning** dan digunakan hanya untuk keperluan akademik.
+Proyek ini dibuat sebagai **Final Project Mata Kuliah Machine Learning** dan digunakan untuk keperluan akademik.
